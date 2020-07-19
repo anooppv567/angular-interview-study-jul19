@@ -1,0 +1,10 @@
+<div>
+  <div class="container">
+    <span class="items"> Parent</span>
+    <input ype="text" [(ngModel)]="userName" placeholder="Enter user name here"/>
+    <button class="items">BtnParent</button>
+  </div>
+  <div>Child Name :<span>{{childName}}</span></div>
+  <app-child userNameFromParent={{userName}}
+    (nameEvent)="nameEventHandler($event)"></app-child>
+</div>
