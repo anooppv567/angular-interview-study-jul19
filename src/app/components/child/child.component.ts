@@ -7,6 +7,7 @@ import { Component, OnInit,Input ,Output, EventEmitter} from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 @Input () userNameFromParent ='' ;
+@Input() phoneNumberFromParent = '';
  @Output () nameEvent = new EventEmitter<string>();
  userName='';
   constructor() { }
